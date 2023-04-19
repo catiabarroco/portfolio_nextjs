@@ -49,7 +49,7 @@ export default function About() {
           content="  I’m Cátia Barroco. I live in Portugal."
         />
       </Head>
-      <Container className="container mx-auto">
+      <div className="container mx-auto px-32">
         <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
           <div className="lg:pl-20">
             <div className="max-w-xs px-2.5 lg:max-w-none">
@@ -62,10 +62,8 @@ export default function About() {
             </div>
           </div>
           <div className="lg:order-first lg:row-span-2">
-            <PageTitle className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’m Cátia Barroco. I live in Portugal.
-            </PageTitle>
-            <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400 tracking-wide leading-9">
+            <PageTitle>I’m Cátia Barroco. I live in Portugal.</PageTitle>
+            <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400 tracking-wide leading-9 text-justify">
               <h2 className="text-2xl tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl font-light">
                 My Story
               </h2>
@@ -108,7 +106,7 @@ export default function About() {
             })}
           </div>
         </div>
-      </Container>
+      </div>
     </>
   );
 }

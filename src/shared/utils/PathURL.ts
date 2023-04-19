@@ -1,4 +1,5 @@
 const URLS = {
+  home: () => '/',
   about: () => '/about',
   projects: () => '/projects',
   articles: () => '/articles',
