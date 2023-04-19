@@ -50,7 +50,7 @@ export default function Document() {
           rel="stylesheet"
         />
       </Head>
-      <body className="flex h-full flex-col bg-zinc-50 dark:bg-black">
+      <body className="flex h-full flex-col bg-brand-secondary-200 dark:bg-brand-secondary-900">
         <Main />
         <NextScript />
       </body>

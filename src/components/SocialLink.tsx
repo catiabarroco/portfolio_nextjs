@@ -32,14 +32,13 @@ export default function SocialLink({
     <div className="flex">
       <Link
         href={href}
-        className="group flex text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
+        className="group flex text-brand-secondary-800 dark:text-brand-secondary-200"
       >
         <SpriteIcon
           category={SpritesCategories.SOCIAL}
           name={icon}
           size="xl"
           title={iconTitle}
-          className="text-zinc-400 dark:text-zinc-500"
         />
         <span className={`ml-4 ${textSizeValue}`}>{children}</span>
       </Link>

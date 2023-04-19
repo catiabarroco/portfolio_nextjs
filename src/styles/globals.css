@@ -8,6 +8,10 @@ h1, h2, h3, h4, h5, h6 {
     @apply font-titles;
 }
 
+a:hover, a:focus{
+    @apply transition text-brand-primary-medium
+}
+
 body {
     @apply font-text;
 }

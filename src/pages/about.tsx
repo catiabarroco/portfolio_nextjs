@@ -2,42 +2,9 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Container } from '@components/Container';
-import imgPerfil from '../../public/assets/imgPerfil.jpeg';
 import SocialLink from '@components/SocialLink';
 import PageTitle from '@components/PageTitle';
-
-const socialMedia = [
-  {
-    href: '#',
-    icon: 'twitter',
-    iconTitle: 'twitter',
-    linkText: 'Follow on Twitter',
-  },
-  {
-    href: '#',
-    icon: 'instagram',
-    iconTitle: 'instagram',
-    linkText: 'Follow on Instagram',
-  },
-  {
-    href: '#',
-    icon: 'github',
-    iconTitle: 'Git Hub',
-    linkText: 'Follow on GitHub',
-  },
-  {
-    href: '#',
-    icon: 'linkedin',
-    iconTitle: 'linkedin',
-    linkText: 'Follow on LinkedIn',
-  },
-  {
-    href: 'mailto:catiabarroco@gmail.com',
-    icon: 'gmail',
-    iconTitle: 'email',
-    linkText: 'catiabarroco@gmail.com',
-  },
-];
+import { socialMedia } from '@constants';
 
 export default function About() {
   return (
@@ -46,20 +13,20 @@ export default function About() {
         <title>About - Cátia Barroco</title>
         <meta
           name="description"
-          content="  I’m Cátia Barroco. I live in Portugal."
+          content="I’m Cátia Barroco. I live in Portugal."
         />
       </Head>
-      <div className="container mx-auto px-32">
+      <div className="container mx-auto px-5 md:px-32">
         <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
-          <div className="lg:pl-20">
-            <div className="max-w-xs px-2.5 lg:max-w-none">
-              <Image
-                src={imgPerfil}
-                alt="perfil image"
-                sizes="(min-width: 1024px) 32rem, 20rem"
-                className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
-              />
-            </div>
+          <div className="lg:pl-20 max-w-xs px-2.5 lg:max-w-none">
+            <Image
+              src="/assets/imgPerfil.jpeg"
+              alt="perfil image"
+              sizes="(min-width: 1024px) 32rem, 20rem"
+              width={512}
+              height={512}
+              className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+            />
           </div>
           <div className="lg:order-first lg:row-span-2">
             <PageTitle>I’m Cátia Barroco. I live in Portugal.</PageTitle>
@@ -93,14 +60,10 @@ export default function About() {
             </div>
           </div>
           <div className="lg:pl-20 flex flex-col gap-4 ">
-            {socialMedia.map((social) => {
+            {socialMedia.map(({ href, icon, iconTitle, linkText }) => {
               return (
-                <SocialLink
-                  href={social.href}
-                  icon={social.icon}
-                  iconTitle={social.iconTitle}
-                >
-                  {social.linkText}
+                <SocialLink href={href} icon={icon} iconTitle={iconTitle}>
+                  {linkText}
                 </SocialLink>
               );
             })}
