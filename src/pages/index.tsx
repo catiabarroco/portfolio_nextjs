@@ -31,7 +31,7 @@ export default function Home() {
 
           <div className="bg-brand-secondary-200 dark:bg-brand-secondary-700 p-6 md:p-0 rounded rounded-lg md:rounded-none md:-mx-32 flex flex-col-reverse lg:flex-row gap-10 lg:gap-0">
             <Image
-              src="/assets/imgPerfil.jpeg"
+              src="/assets/images/perfilPicture.jpeg"
               alt="perfil image"
               width={640}
               height={640}

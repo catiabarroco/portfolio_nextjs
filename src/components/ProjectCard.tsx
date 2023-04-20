@@ -19,10 +19,7 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <article className="dark:bg-brand-secondary-700 p-10 rounded rounded-xl flex gap-5 flex-col border dark:border-brand-secondary-700 shadow">
-      <div className="flex flex-col gap-4">
-        <h1 className="text-brand-primary-medium dark:text-brand-secondary-200">
-          {title}
-        </h1>
+      <section>
         <Image
           src="/assets/images/projectPortfolio.png"
           alt="project portfolio"
@@ -30,6 +27,12 @@ export default function ProjectCard({
           height={400}
           className="rounded rounded-lg mx-auto"
         />
+      </section>
+      <section className="flex flex-col gap-4">
+        {/*<div className="flex flex-col gap-4">*/}
+        <h1 className="text-brand-primary-medium dark:text-brand-secondary-200">
+          {title}
+        </h1>
         <p className="text-brand-secondary-300 dark:text-brand-secondary-300">
           {description}
         </p>
@@ -47,20 +50,21 @@ export default function ProjectCard({
             );
           })}
         </div>
-      </div>
+        {/*</div>*/}
 
-      <div className="flex justify-center gap-5 ">
-        <NavLink href={linkOnline} newTab>
-          <Button variant="secondaryWhite" rounded size="large">
-            Portfolio
-          </Button>
-        </NavLink>
-        <NavLink href={repoLink} newTab>
-          <Button variant="secondaryWhite" rounded size="large">
-            Repository
-          </Button>
-        </NavLink>
-      </div>
+        <div className="flex justify-center gap-5 ">
+          <NavLink href={linkOnline} newTab>
+            <Button variant="secondaryWhite" rounded size="large">
+              Portfolio
+            </Button>
+          </NavLink>
+          <NavLink href={repoLink} newTab>
+            <Button variant="secondaryWhite" rounded size="large">
+              Repository
+            </Button>
+          </NavLink>
+        </div>
+      </section>
     </article>
   );
 }

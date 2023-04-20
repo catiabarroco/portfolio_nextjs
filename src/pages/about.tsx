@@ -19,7 +19,7 @@ export default function About() {
         <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
           <div className="lg:pl-20 max-w-xs px-2.5 lg:max-w-none">
             <Image
-              src="/assets/imgPerfil.jpeg"
+              src="/assets/images/perfilPicture.jpeg"
               alt="perfil image"
               sizes="(min-width: 1024px) 32rem, 20rem"
               width={512}

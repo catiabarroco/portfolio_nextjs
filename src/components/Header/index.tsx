@@ -13,7 +13,7 @@ export function Header() {
       <div className="container lg:items-center mx-auto px-5 md:px-32 dark:text-white flex justify-between">
         <NavLink href={URLS.home()} className="hidden lg:flex">
           <Image
-            src="/assets/imgPerfil.jpeg"
+            src="/assets/images/perfilPicture.jpeg"
             alt="perfil image"
             width={64}
             height={64}
