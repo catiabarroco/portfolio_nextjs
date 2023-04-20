@@ -13,13 +13,13 @@ export default function Contacts() {
         <meta name="contacts" content="My contacts" />
       </Head>
       <div className="container mx-auto px-5 md:px-32 flex flex-col gap-10">
-        <PageTitle>Let's get in touch!</PageTitle>
+        <PageTitle>Let&apos;s get in touch!</PageTitle>
         <div className="flex flex-col gap-16">
           <div className="text-base text-zinc-600 dark:text-zinc-400 tracking-wide leading-9">
             <p className="underline">Contact me:</p>
             <p>
-              I'm here to provide the information and services you need quickly
-              and to answer any questions you may have.{' '}
+              I&apos;m here to provide the information and services you need
+              quickly and to answer any questions you may have.
             </p>
           </div>
           <div className="flex flex-col gap-10 md:flex-row justify-between">

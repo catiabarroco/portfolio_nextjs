@@ -12,13 +12,14 @@ type NaveLinkProps = {
 
 const styleSelectedVariant = {
   primaryStyle: 'text-brand-primary font-semibold',
+  default: '',
 } as const;
 
 export function NavLink({
   href,
   children,
   className = '',
-  style = '',
+  style = 'default',
   selectedStyle = false,
   newTab = false,
 }: NaveLinkProps) {

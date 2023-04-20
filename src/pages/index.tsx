@@ -21,9 +21,9 @@ export default function Home() {
               <PageTitle>Front-end web development</PageTitle>
               <p className="font-light text-zinc-600 dark:text-zinc-400 text-justify">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
+                industry. Lorem Ipsum has been the industry&apos;s standard
+                dummy text ever since the 1500s, when an unknown printer took a
+                galley of type and scrambled it to make a type specimen book.
               </p>
             </div>
             <Image src={handCoding} alt="icon" width={500} height={500} />
@@ -44,7 +44,7 @@ export default function Home() {
                 </h2>
                 <p className="leading-8 tracking-wide text-justify ">
                   Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
+                  typesetting industry. Lorem Ipsum has been the industry&apos;s
                   standard dummy text ever since the 1500s, when an unknown
                   printer took a galley of type and scrambled it to make a type
                   specimen book. It has survived not only five centuries, but

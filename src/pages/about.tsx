@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Container } from '@components/Container';
 import SocialLink from '@components/SocialLink';
 import PageTitle from '@components/PageTitle';
 import { socialMedia } from '@constants';
@@ -39,12 +38,13 @@ export default function About() {
                 Renewable Energy Engineering. At that time, I knew very little
                 about programming, only what I had learned about C language
                 during the Engineering degree. However I had always had a huge
-                desire to learn more because I loved that whole concept of "see
-                it happening" in the middle of "if's and else's and while's" and
-                it was a fantastic experience. But this was not my area of
-                specialization and I worked until September 2021 in the field of
-                engineering projects in energy efficiency and then I worked in
-                telecommunications at the multinational Visabeira.
+                desire to learn more because I loved that whole concept of
+                &quot;see it happening&quot; in the middle of &quot;if&apos;s
+                and else&apos;s and while&apos;s&quot; and it was a fantastic
+                experience. But this was not my area of specialization and I
+                worked until September 2021 in the field of engineering projects
+                in energy efficiency and then I worked in telecommunications at
+                the multinational Visabeira.
               </p>
               <h2 className="text-2xl tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl font-light">
                 Why I change my carreer?
