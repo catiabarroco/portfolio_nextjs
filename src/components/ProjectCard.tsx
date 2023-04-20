@@ -42,6 +42,7 @@ export default function ProjectCard({
                 title={stack}
                 size="xl"
                 className="text-brand-secondary-700 dark:text-brand-secondary-300"
+                key={stack}
               />
             );
           })}

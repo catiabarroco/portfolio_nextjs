@@ -2,7 +2,7 @@ import URLS from '@utils/PathURL';
 import { NavLink } from '@components/NavLink';
 import Image from 'next/image';
 
-import { isRouterPath } from '@utils/RouterPath';
+import { IsRouterPath } from '@utils/RouterPath';
 import { ModeToggle } from '@components/ModeToggle';
 import { MenuSmall } from '@components/Header/partials/MenuSmall';
 import { menuLinks } from '@constants';
@@ -18,7 +18,7 @@ export function Header() {
             width={64}
             height={64}
             className={`rounded rounded-full ${
-              isRouterPath(URLS.home()) ? 'p-1 bg-brand-primary-medium' : ''
+              IsRouterPath(URLS.home()) ? 'p-1 bg-brand-primary-medium' : ''
             }`}
           />
         </NavLink>
@@ -28,8 +28,9 @@ export function Header() {
             return (
               <NavLink
                 href={href}
-                selectedStyle={isRouterPath(href)}
+                selectedStyle={IsRouterPath(href)}
                 style="primaryStyle"
+                key={label}
               >
                 {label}
               </NavLink>

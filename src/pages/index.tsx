@@ -58,7 +58,12 @@ export default function Home() {
               <div className="flex gap-4">
                 {socialMedia.map(({ href, icon, iconTitle }) => {
                   return (
-                    <SocialLink href={href} icon={icon} iconTitle={iconTitle} />
+                    <SocialLink
+                      key={icon}
+                      href={href}
+                      icon={icon}
+                      iconTitle={iconTitle}
+                    />
                   );
                 })}
               </div>
@@ -68,8 +73,8 @@ export default function Home() {
           <div className="flex flex-col gap-7">
             <PageTitle>Work Experience</PageTitle>
             <div className="grid lg:grid-cols-3 gap-10 md:gap-5">
-              {workExperience.map((props) => (
-                <WorkCard experience={props} />
+              {workExperience.map((props, index) => (
+                <WorkCard experience={props} key={index} />
               ))}
             </div>
           </div>

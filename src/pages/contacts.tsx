@@ -31,6 +31,7 @@ export default function Contacts() {
                     icon={icon}
                     iconTitle={iconTitle}
                     textSize="large"
+                    key={icon}
                   >
                     {linkText}
                   </SocialLink>

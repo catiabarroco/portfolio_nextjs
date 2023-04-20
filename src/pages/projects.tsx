@@ -13,8 +13,8 @@ export default function Projects() {
         />
       </Head>
       <div className="container mx-auto px-5 md:px-32 grid lg:grid-cols-2 gap-5">
-        {projectsList.map((props) => {
-          return <ProjectCard project={props} />;
+        {projectsList.map((props, index) => {
+          return <ProjectCard project={props} key={index} />;
         })}
       </div>
     </>

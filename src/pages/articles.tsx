@@ -23,9 +23,12 @@ export default function Articles() {
           </p>
         </div>
         <div className="flex flex-col gap-16">
-          {articlesList.map(({ href, date, title, description }) => {
+          {articlesList.map(({ href, date, title, description }, index) => {
             return (
-              <article className="md:border-l md:border-brand-secondary-200 md:pl-6 md:dark:border-zinc-700/40 flex gap-5 max-w-6xl">
+              <article
+                key={index}
+                className="md:border-l md:border-brand-secondary-200 md:pl-6 md:dark:border-zinc-700/40 flex gap-5 max-w-6xl"
+              >
                 <div className="text-brand-secondary-700 dark:text-brand-secondary-300 w-1/3 pt-7">
                   {date}
                 </div>

@@ -62,7 +62,12 @@ export default function About() {
           <div className="lg:pl-20 flex flex-col gap-4 ">
             {socialMedia.map(({ href, icon, iconTitle, linkText }) => {
               return (
-                <SocialLink href={href} icon={icon} iconTitle={iconTitle}>
+                <SocialLink
+                  href={href}
+                  icon={icon}
+                  iconTitle={iconTitle}
+                  key={{ icon }}
+                >
                   {linkText}
                 </SocialLink>
               );
