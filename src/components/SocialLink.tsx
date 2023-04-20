@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { SpritesCategories } from '@enums';
 import { SpriteIcon } from '@components/common/icons/SpriteIcon';
 import { ReactNode } from 'react';
+import { NavLink } from '@components/NavLink';
 
 type SocialLinkProps = {
   href: string;
@@ -30,8 +31,9 @@ export default function SocialLink({
   const textSizeValue = textSizeVariants[textSize];
   return (
     <div className="flex">
-      <Link
+      <NavLink
         href={href}
+        newTab
         className="group flex text-brand-secondary-800 dark:text-brand-secondary-200"
       >
         <SpriteIcon
@@ -41,7 +43,7 @@ export default function SocialLink({
           title={iconTitle}
         />
         <span className={`ml-4 ${textSizeValue}`}>{children}</span>
-      </Link>
+      </NavLink>
     </div>
   );
 }

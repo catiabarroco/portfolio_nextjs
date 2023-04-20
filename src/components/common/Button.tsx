@@ -21,6 +21,12 @@ export const buttonVariants = {
     disabled:
       'dark:bg-transparent dark:border-brand-secondary-200 border dark:text-font-light',
   },
+  secondaryWhite: {
+    default:
+      'border dark:border-brand-secondary-700 bg-brand-secondary-200 hover:bg-brand-secondary-300 dark:bg-brand-secondary-300 dark:hover:bg-brand-secondary-200 font-light text-brand-secondary-700',
+    disabled:
+      'dark:bg-transparent dark:border-brand-secondary-200 border dark:text-font-light',
+  },
   // 'no-border': {
   //   default: 'bg-transparent',
   //   disabled: 'text-font-light',

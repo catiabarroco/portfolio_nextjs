@@ -1,16 +1,9 @@
 export const articlesList = [
   {
-    date: 'September 5, 2022',
-    href: '#',
-    title: 'title',
+    date: 'October 2, 2022',
+    href: 'https://medium.com/xgeeks/change-career-b3a1c7783216',
+    title: 'Career Change - How I entered the software world',
     description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
-  },
-  {
-    date: 'September 5, 2022',
-    href: '#',
-    title: 'title',
-    description:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+      'When many years pass, and we focus on a particular career, the uncertainties tend to increase. Our ability to do something different, to learn something, to change and even evolve are questioned...',
   },
 ];

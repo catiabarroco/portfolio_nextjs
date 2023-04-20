@@ -37,7 +37,7 @@ const modeScript = `
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html lang="en" className="dark">
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link

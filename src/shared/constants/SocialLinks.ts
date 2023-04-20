@@ -1,24 +1,24 @@
 export const socialMedia = [
+  // {
+  //   href: '#',
+  //   icon: 'twitter',
+  //   iconTitle: 'twitter',
+  //   linkText: 'Follow on Twitter',
+  // },
   {
-    href: '#',
-    icon: 'twitter',
-    iconTitle: 'twitter',
-    linkText: 'Follow on Twitter',
-  },
-  {
-    href: '#',
+    href: 'https://www.instagram.com/catiscoding/',
     icon: 'instagram',
     iconTitle: 'instagram',
     linkText: 'Follow on Instagram',
   },
   {
-    href: '#',
+    href: 'https://github.com/catiabarroco',
     icon: 'github',
     iconTitle: 'Git Hub',
     linkText: 'Follow on GitHub',
   },
   {
-    href: '#',
+    href: 'https://www.linkedin.com/in/catiabarroco/',
     icon: 'linkedin',
     iconTitle: 'linkedin',
     linkText: 'Follow on LinkedIn',

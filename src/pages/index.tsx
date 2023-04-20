@@ -3,8 +3,9 @@ import PageTitle from '@components/PageTitle';
 import Image from 'next/image';
 import SocialLink from '@components/SocialLink';
 import handCoding from '../../public/assets/icons/handCoding.svg';
-import { socialMedia } from '@constants';
+import { socialMedia, workExperience } from '@constants';
 import Head from 'next/head';
+import WorkCard from '@components/WorkCard';
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
       </Head>
       <div className="container mx-auto px-5 md:px-32">
         <div className="flex flex-col gap-10 md:gap-20">
-          <div className="grid grid-rows-2 md:grid-rows-none md:grid-cols-2 md:gap-40">
+          <div className="grid grid-rows-2 lg:grid-rows-none lg:grid-cols-2 lg:gap-40">
             <div className=" flex flex-col justify-center gap-5 leading-8 tracking-wide">
               <PageTitle>Front-end web development</PageTitle>
               <p className="font-light text-zinc-600 dark:text-zinc-400 text-justify">
@@ -28,15 +29,15 @@ export default function Home() {
             <Image src={handCoding} alt="icon" width={500} height={500} />
           </div>
 
-          <div className="bg-brand-secondary-200 dark:bg-brand-secondary-700 p-6 md:p-0 rounded rounded-lg md:rounded-none md:-mx-32 flex flex-col-reverse md:flex-row gap-10 md:gap-0">
+          <div className="bg-brand-secondary-200 dark:bg-brand-secondary-700 p-6 md:p-0 rounded rounded-lg md:rounded-none md:-mx-32 flex flex-col-reverse lg:flex-row gap-10 lg:gap-0">
             <Image
               src="/assets/imgPerfil.jpeg"
               alt="perfil image"
               width={640}
               height={640}
-              className="rounded rounded-lg md:rounded-none"
+              className="rounded rounded-lg lg:rounded-none mx-auto"
             />
-            <div className="md:px-20 flex flex-col justify-center gap-10 md:gap-20">
+            <div className="md:px-20 flex flex-col justify-center gap-10 md:gap-7">
               <div className="flex flex-col gap-4 dark:text-brand-secondary-200">
                 <h2 className="text-2xl tracking-tight text-brand-secondary-800 dark:text-brand-secondary-200 sm:text-3xl font-light">
                   About me
@@ -61,6 +62,15 @@ export default function Home() {
                   );
                 })}
               </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-7">
+            <PageTitle>Work Experience</PageTitle>
+            <div className="grid lg:grid-cols-3 gap-10 md:gap-5">
+              {workExperience.map((props) => (
+                <WorkCard experience={props} />
+              ))}
             </div>
           </div>
         </div>

@@ -7,6 +7,7 @@ type NaveLinkProps = {
   className?: string;
   style?: keyof typeof styleSelectedVariant;
   selectedStyle?: boolean;
+  newTab?: boolean;
 };
 
 const styleSelectedVariant = {
@@ -19,11 +20,16 @@ export function NavLink({
   className = '',
   style = '',
   selectedStyle = false,
+  newTab = false,
 }: NaveLinkProps) {
   const selectStyle = selectedStyle ? styleSelectedVariant[style] : '';
 
   return (
-    <Link href={href} className={`${className} ${selectStyle}`}>
+    <Link
+      href={href}
+      className={`${className} ${selectStyle}`}
+      target={newTab ? '_blank' : ''}
+    >
       {children}
     </Link>
   );

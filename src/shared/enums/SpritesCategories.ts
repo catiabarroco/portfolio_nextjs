@@ -3,4 +3,5 @@ export enum SpritesCategories {
   SOCIAL = 'social',
   THEME = 'theme',
   CHEVRON = 'chevron',
+  STACK = 'stack',
 }

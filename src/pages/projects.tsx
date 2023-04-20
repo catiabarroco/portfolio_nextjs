@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import ProjectCard from '@components/ProjectCard';
-import WorkCard from '@components/WorkCard';
+import { projectsList, workExperience } from '@constants';
 
 export default function Projects() {
   return (
@@ -12,12 +12,10 @@ export default function Projects() {
           content="I’m Cátia Barroco. I live in Portugal."
         />
       </Head>
-      <div className="container mx-auto px-5 md:px-32">
-        <div className="md:grid md:grid-cols-3 gap-10">
-          <WorkCard />
-          <WorkCard />
-          <WorkCard />
-        </div>
+      <div className="container mx-auto px-5 md:px-32 grid lg:grid-cols-2 gap-5">
+        {projectsList.map((props) => {
+          return <ProjectCard project={props} />;
+        })}
       </div>
     </>
   );
