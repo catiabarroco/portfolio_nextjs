@@ -12,7 +12,7 @@ export default function Projects() {
           content="I’m Cátia Barroco. I live in Portugal."
         />
       </Head>
-      <div className="container mx-auto px-5 md:px-32 grid lg:grid-cols-2 gap-5">
+      <div className="container mx-auto px-5 md:px-32 grid lg:grid-cols-3 gap-5">
         {projectsList.map((props, index) => {
           return <ProjectCard project={props} key={index} />;
         })}

@@ -3,7 +3,7 @@ import { articlesList } from '@constants';
 import Head from 'next/head';
 import { NavLink } from '@components/NavLink';
 import { SpritesCategories } from '@enums';
-import { SpriteIcon } from '@components/common/icons/SpriteIcon';
+import { SpriteIcon } from '@components/common/SpriteIcon';
 
 export default function Articles() {
   return (

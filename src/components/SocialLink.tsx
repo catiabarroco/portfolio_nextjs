@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import Link from 'next/link';
 import { SpritesCategories } from '@enums';
-import { SpriteIcon } from '@components/common/icons/SpriteIcon';
+import { SpriteIcon } from '@components/common/SpriteIcon';
 import { ReactNode } from 'react';
 import { NavLink } from '@components/NavLink';
 

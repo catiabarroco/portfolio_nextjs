@@ -1,4 +1,4 @@
-import { SpriteIcon } from '@components/common/icons/SpriteIcon';
+import { SpriteIcon } from '@components/common/SpriteIcon';
 import { SpritesCategories } from '@enums';
 import { NavLink } from '@components/NavLink';
 

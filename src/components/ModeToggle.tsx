@@ -1,5 +1,5 @@
 import Button from '@components/common/Button';
-import { SpriteIcon } from '@components/common/icons/SpriteIcon';
+import { SpriteIcon } from '@components/common/SpriteIcon';
 import { SpritesCategories } from '@enums';
 
 export function ModeToggle() {

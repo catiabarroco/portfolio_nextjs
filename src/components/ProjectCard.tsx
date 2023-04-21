@@ -1,4 +1,4 @@
-import { SpriteIcon } from '@components/common/icons/SpriteIcon';
+import { SpriteIcon } from '@components/common/SpriteIcon';
 import { SpritesCategories, Stacks } from '@enums';
 import { NavLink } from '@components/NavLink';
 import Button from '@components/common/Button';
@@ -18,22 +18,21 @@ export default function ProjectCard({
   project: { stacks, title, description, repoLink, linkOnline },
 }: ProjectCardProps) {
   return (
-    <article className="dark:bg-brand-secondary-700 p-10 rounded rounded-xl flex gap-5 flex-col border dark:border-brand-secondary-700 shadow">
-      <section>
+    <article className="dark:bg-brand-secondary-700 rounded rounded-xl flex gap-5 flex-col border dark:border-brand-secondary-700 shadow">
+      <section className="w-full">
         <Image
           src="/assets/images/projectPortfolio.png"
           alt="project portfolio"
-          width={400}
-          height={400}
+          width={900}
+          height={900}
           className="rounded rounded-lg mx-auto"
         />
       </section>
-      <section className="flex flex-col gap-4">
-        {/*<div className="flex flex-col gap-4">*/}
+      <section className="flex flex-col gap-4 px-10 pb-5 h-full">
         <h1 className="text-brand-primary-medium dark:text-brand-secondary-200">
           {title}
         </h1>
-        <p className="text-brand-secondary-300 dark:text-brand-secondary-300">
+        <p className="text-brand-secondary-300 dark:text-brand-secondary-300 text-sm">
           {description}
         </p>
         <div className="flex gap-2">
@@ -50,12 +49,11 @@ export default function ProjectCard({
             );
           })}
         </div>
-        {/*</div>*/}
 
-        <div className="flex justify-center gap-5 ">
+        <footer className="flex justify-center gap-5 mt-auto">
           <NavLink href={linkOnline} newTab>
             <Button variant="secondaryWhite" rounded size="large">
-              Portfolio
+              Online Link
             </Button>
           </NavLink>
           <NavLink href={repoLink} newTab>
@@ -63,7 +61,7 @@ export default function ProjectCard({
               Repository
             </Button>
           </NavLink>
-        </div>
+        </footer>
       </section>
     </article>
   );

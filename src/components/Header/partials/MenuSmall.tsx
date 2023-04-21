@@ -1,5 +1,5 @@
 import { Menu } from '@headlessui/react';
-import { SpriteIcon } from '@components/common/icons/SpriteIcon';
+import { SpriteIcon } from '@components/common/SpriteIcon';
 import { SpritesCategories } from '@enums';
 import { menuLinks } from '@constants/Menu';
 
