@@ -3,6 +3,7 @@ import { Stacks } from '@enums/Stacks';
 export const projectsList = [
   {
     title: 'My Portfolio',
+    imgSrc: '/assets/images/projectPortfolio.png',
     linkOnline: 'https://portfolio-nextjs-sand.vercel.app/',
     repoLink: 'https://github.com/catiabarroco/portfolio_nextjs',
     stacks: [
@@ -18,6 +19,7 @@ export const projectsList = [
   },
   {
     title: 'ReactJS Fundamentals',
+    imgSrc: '/assets/images/projectIgnite22-01.png',
     linkOnline: 'https://rs-ignite22-proj1.vercel.app/',
     repoLink: 'https://github.com/catiabarroco/rs-ignite22-proj1',
     stacks: [

@@ -11,21 +11,22 @@ type ProjectCardProps = {
     stacks: Stacks[];
     description: string;
     linkOnline: string;
+    imgSrc: string;
   };
 };
 
 export default function ProjectCard({
-  project: { stacks, title, description, repoLink, linkOnline },
+  project: { stacks, title, description, repoLink, linkOnline, imgSrc },
 }: ProjectCardProps) {
   return (
     <article className="dark:bg-brand-secondary-700 rounded rounded-xl flex gap-5 flex-col border dark:border-brand-secondary-700 shadow">
       <section className="w-full">
         <Image
-          src="/assets/images/projectPortfolio.png"
-          alt="project portfolio"
+          src={imgSrc}
+          alt={title}
           width={900}
           height={900}
-          className="rounded rounded-lg mx-auto"
+          className="rounded rounded-t-lg mx-auto"
         />
       </section>
       <section className="flex flex-col gap-4 px-10 pb-5 h-full">
