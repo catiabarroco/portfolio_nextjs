@@ -33,4 +33,24 @@ export const projectsList = [
     description:
       'React application with React concepts: componentization, properties, states, immutability and hooks.',
   },
+  {
+    title: 'Timer - SPA with ReactJS',
+    imgSrc: '/assets/images/projectIgnite22-02.png',
+    linkOnline: 'https://rs-ignite22-proj2.vercel.app/',
+    repoLink: 'https://github.com/catiabarroco/rs-ignite22-proj2',
+    stacks: [
+      Stacks.HTML,
+      Stacks.REACT,
+      Stacks.TYPESCRIPT,
+      Stacks.STYLED_COMPONENTS,
+      Stacks.REACT_HOOK_FORM,
+      Stacks.REACT_ROUTER,
+      Stacks.IMMER,
+      Stacks.VITE,
+      Stacks.ESLINT,
+      Stacks.PHOSPHOR,
+    ],
+    description:
+      'Complete application with routing, ContextAPI, useReducer, immer and others.',
+  },
 ];

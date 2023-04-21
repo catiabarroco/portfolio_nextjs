@@ -5,4 +5,13 @@ export enum Stacks {
   CSS = 'css',
   TAILWIND = 'tailwind',
   TYPESCRIPT = 'typescript',
+  STYLED_COMPONENTS = 'styled-components',
+  REACT_HOOK_FORM = 'react-hook-form',
+  REACT_ROUTER = 'react-router',
+  IMMER = 'immer',
+  VITE = 'vite',
+  GIT = 'git',
+  GIT_HUB = 'git-hub',
+  ESLINT = 'eslint',
+  PHOSPHOR = 'phosphor',
 }
