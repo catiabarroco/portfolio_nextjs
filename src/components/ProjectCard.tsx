@@ -29,14 +29,14 @@ export default function ProjectCard({
           className="rounded rounded-t-lg mx-auto"
         />
       </section>
-      <section className="flex flex-col gap-4 px-10 pb-5 h-full">
+      <section className="flex flex-col gap-4 px-4 lg:px-7 pb-5 h-full">
         <h1 className="text-brand-primary-medium dark:text-brand-secondary-200">
           {title}
         </h1>
         <p className="text-brand-secondary-300 dark:text-brand-secondary-300 text-sm">
           {description}
         </p>
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2 ">
           {stacks.map((stack) => {
             return (
               <SpriteIcon
