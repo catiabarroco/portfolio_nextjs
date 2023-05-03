@@ -14,4 +14,6 @@ export enum Stacks {
   GIT_HUB = 'git-hub',
   ESLINT = 'eslint',
   PHOSPHOR = 'phosphor',
+  RADIX_UI = 'radix-ui',
+  AXIOS = 'axios',
 }

@@ -53,4 +53,23 @@ export const projectsList = [
     description:
       'Complete application with routing, ContextAPI, useReducer, immer and others.',
   },
+  {
+    title: 'API consumption and performance in ReactJS',
+    imgSrc: '/assets/images/projectIgnite22-03.png',
+    linkOnline: 'https://rs-ignite22-proj3.vercel.app/',
+    repoLink: 'https://github.com/catiabarroco/rs-ignite22-proj3',
+    stacks: [
+      Stacks.REACT,
+      Stacks.TYPESCRIPT,
+      Stacks.STYLED_COMPONENTS,
+      Stacks.REACT_HOOK_FORM,
+      Stacks.RADIX_UI,
+      Stacks.VITE,
+      Stacks.ESLINT,
+      Stacks.PHOSPHOR,
+      Stacks.AXIOS,
+    ],
+    description:
+      'Complete web front-end application, connecting to an API, performing with React, component rendering flow.',
+  },
 ];
