@@ -3,6 +3,7 @@ const URLS = {
   about: () => '/about',
   projects: () => '/projects',
   articles: () => '/articles',
+  courses: () => '/courses',
   contacts: () => '/contacts',
 };
 

@@ -5,5 +5,6 @@ export const menuLinks = [
   { href: URLS.about(), label: 'About Me' },
   { href: URLS.projects(), label: 'Projects' },
   { href: URLS.articles(), label: 'Articles' },
+  { href: URLS.courses(), label: 'Courses' },
   { href: URLS.contacts(), label: 'Contacts' },
 ];

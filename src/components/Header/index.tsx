@@ -6,6 +6,7 @@ import { IsRouterPath } from '@utils/RouterPath';
 import { ModeToggle } from '@components/ModeToggle';
 import { MenuSmall } from '@components/Header/partials/MenuSmall';
 import { menuLinks } from '@constants';
+import { MenuPages } from '@components/MenuPages';
 
 export function Header() {
   return (
@@ -24,21 +25,11 @@ export function Header() {
         </NavLink>
 
         <div className="hidden lg:flex rounded-full py-2 px-6 gap-7 border shadow shadow-md dark:bg-brand-secondary-700 font-light items-center">
-          {menuLinks.map(({ href, label }) => {
-            return (
-              <NavLink
-                href={href}
-                selectedStyle={IsRouterPath(href)}
-                style="primaryStyle"
-                key={label}
-              >
-                {label}
-              </NavLink>
-            );
-          })}
+          <MenuPages />
         </div>
 
         <MenuSmall />
+
         <ModeToggle />
       </div>
     </header>
