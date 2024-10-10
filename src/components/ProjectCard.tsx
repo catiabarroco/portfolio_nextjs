@@ -5,38 +5,43 @@ import Button from '@components/common/Button';
 import Image from 'next/image';
 
 type ProjectCardProps = {
-  project: {
-    title: string;
-    repoLink: string;
-    stacks: Stacks[];
-    description: string;
-    linkOnline: string;
-    imgSrc: string;
+    project: {
+      title: string;
+      repoLink: string;
+      stacks: Stacks[];
+      description: string;
+      linkOnline: string;
+      imgSrc: string;
+    };
   };
-};
+  
 
-export default function ProjectCard({
-  project: { stacks, title, description, repoLink, linkOnline, imgSrc },
+
+
+export default function CoursesCard({
+  project: { title, description, repoLink, linkOnline, stacks, imgSrc  },
 }: ProjectCardProps) {
   return (
-    <article className="dark:bg-brand-secondary-700 rounded rounded-xl flex gap-5 flex-col border dark:border-brand-secondary-700 shadow">
-      <section className="w-full">
+    <article className="rounded gap-5 p-5 items-center border dark:border-brand-secondary-700 shadow">
+     <section className='flex gap-5'>
+     <section className="w-full basis-1/4 shrink-0 rounded ">
         <Image
           src={imgSrc}
           alt={title}
           width={900}
           height={900}
-          className="rounded rounded-t-lg mx-auto"
+          className='rounded-xl'
         />
       </section>
-      <section className="flex flex-col gap-4 px-4 lg:px-7 pb-5 h-full">
-        <h1 className="text-brand-primary-medium dark:text-brand-secondary-200">
-          {title}
-        </h1>
-        <p className="text-brand-secondary-300 dark:text-brand-secondary-300 text-sm">
-          {description}
-        </p>
-        <div className="flex flex-wrap gap-2 ">
+      <section className="flex flex-col gap-4 h-full p-5">
+ 
+            <h1 className="text-2xl tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl font-light ">
+              {title}
+            </h1>
+            <p className="text-brand-secondary-300 dark:text-brand-secondary-300 text-sm text-justify">
+              {description}
+            </p>
+            <div className="flex flex-wrap gap-2 ">
           {stacks.map((stack) => {
             return (
               <SpriteIcon
@@ -51,19 +56,33 @@ export default function ProjectCard({
           })}
         </div>
 
-        <footer className="flex justify-center gap-5 mt-auto">
-          <NavLink href={linkOnline} newTab>
-            <Button variant="secondaryWhite" rounded size="large">
-              Online Link
-            </Button>
+
+       
+        <footer className="flex gap-5 text-brand-primary ">
+          <NavLink
+            href={linkOnline}
+            newTab
+          >
+            <SpriteIcon
+              category={SpritesCategories.COMMON}
+              name="link"
+              size="xl"
+              title="link"
+            />
           </NavLink>
           <NavLink href={repoLink} newTab>
-            <Button variant="secondaryWhite" rounded size="large">
-              Repository
-            </Button>
+            <SpriteIcon
+              category={SpritesCategories.SOCIAL}
+              name="github"
+              title="github"
+              size="xl"
+              key="github"
+            />
           </NavLink>
         </footer>
       </section>
+
+     </section>
     </article>
   );
 }

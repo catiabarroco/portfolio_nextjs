@@ -16,4 +16,10 @@ export enum Stacks {
   PHOSPHOR = 'phosphor',
   RADIX_UI = 'radix-ui',
   AXIOS = 'axios',
+  VSCODE= 'vscode',
+  BOOTSTRAP='bootstrap',
+  SEO='seo',
+  HOSTING='hosting',
+  RESPONSIVE="responsive",
+  API="api"
 }

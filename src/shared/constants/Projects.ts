@@ -72,4 +72,73 @@ export const projectsList = [
     description:
       'Complete web front-end application, connecting to an API, performing with React, component rendering flow.',
   },
+  {
+    title: 'SheCodes React Ad-on',
+    imgSrc: '/assets/images/sheCodes.png',
+    linkOnline: 'https://competent-banach-9901a5.netlify.app/',
+    repoLink: 'https://github.com/catiabarroco/Vanilla-Weather-App-2',
+    stacks: [
+      Stacks.HTML,
+      Stacks.CSS,
+      Stacks.JAVASCRIPT,
+      Stacks.VSCODE,
+      Stacks.REACT,
+      Stacks.HOSTING,
+      Stacks.BOOTSTRAP,
+      Stacks.GIT_HUB
+    ],
+    description:
+      "Learning react"
+  },
+  {
+    title: 'SheCodes Responsive',
+    imgSrc: '/assets/images/sheCodes.png',
+    linkOnline: 'https://www.shecodes.io/cohorts/566/projects/712358',
+    repoLink: 'https://github.com/catiabarroco/my-portfolio',
+    stacks: [
+      Stacks.HTML,
+      Stacks.CSS,
+      Stacks.JAVASCRIPT,
+      Stacks.VSCODE,
+      Stacks.API,
+      Stacks.SEO,
+      Stacks.RESPONSIVE,
+      Stacks.HOSTING
+    ],
+    description:
+      "Responsive design, SEO"
+  },
+  {
+    title: 'SheCodes Plus',
+    imgSrc: '/assets/images/sheCodes.png',
+    linkOnline: 'https://thirsty-liskov-31a228.netlify.app/',
+    repoLink: 'https://github.com/catiabarroco/SheCodes-Weather-app',
+    stacks: [
+      Stacks.HTML,
+      Stacks.CSS,
+      Stacks.JAVASCRIPT,
+      Stacks.VSCODE,
+      Stacks.API,
+      Stacks.GIT_HUB,
+      Stacks.HOSTING,
+      Stacks.BOOTSTRAP,
+      Stacks.GIT
+    ],
+    description:
+      "Advanced HTML, CSS, and responsive design; Advanced JavaScript; API's; Git and GitHub"
+  },
+  {
+    title: 'SheCodes Basics',
+    imgSrc: '/assets/images/sheCodes.png',
+    linkOnline: 'https://catiabarroco.github.io/travelingPage/',
+    repoLink: 'https://github.com/catiabarroco/travelingPage',
+    stacks: [
+      Stacks.HTML,
+      Stacks.CSS,
+      Stacks.JAVASCRIPT,
+      Stacks.VSCODE,
+    ],
+    description:
+      'Page with HTML, CSS, JavaScript',
+  },
 ];

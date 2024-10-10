@@ -35,7 +35,7 @@ export default function Articles() {
                 <NavLink
                   href={href}
                   newTab
-                  className="flex flex-col gap-4 group flex transition hover:bg-brand-secondary-200 dark:hover:bg-brand-secondary-700 rounded-2xl p-5"
+                  className="flex flex-col gap-4 group transition hover:bg-brand-secondary-200 dark:hover:bg-brand-secondary-700 rounded-2xl p-5"
                 >
                   <h2 className="text-2xl tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-3xl font-light">
                     {title}
