@@ -12,8 +12,7 @@ export const coursesList = [
       href: 'https://www.shecodes.io/',
       imgSrc: '/assets/images/sheCodes.png',
       title: 'SheCodes React Add-on',
-      repoLink: "",
-      notes:"",
+      repoLink: 'https://github.com/catiabarroco/Vanilla-Weather-App-2',
       certificate:"https://www.shecodes.io/certificates/cd0433495accfd16c17686fd8586f870",
       description:
         "Take the first step on your programming journey with our 100% Online Web Development course, which lasts 3 weeks. This course is designed for beginners who want to learn fundamental web programming skills.",
@@ -22,8 +21,7 @@ export const coursesList = [
       href: 'https://www.shecodes.io/',
       imgSrc: '/assets/images/sheCodes.png',
       title: 'SheCodes Responsive',
-      repoLink: "",
-      notes:"",
+      repoLink: 'https://github.com/catiabarroco/my-portfolio',
       certificate:"https://www.shecodes.io/certificates/da91cc67b56e971d026c2af032f1335c",
       description:
         "Take the first step on your programming journey with our 100% Online Web Development course, which lasts 3 weeks. This course is designed for beginners who want to learn fundamental web programming skills.",
@@ -32,8 +30,7 @@ export const coursesList = [
       href: 'https://www.shecodes.io/',
       imgSrc: '/assets/images/sheCodes.png',
       title: 'SheCodes Plus',
-      repoLink: "",
-      notes:"",
+      repoLink: 'https://github.com/catiabarroco/SheCodes-Weather-app',
       certificate:"https://www.shecodes.io/certificates/a54c7f97a0a34952c12199de5b414940",
       description:
         "Take the first step on your programming journey with our 100% Online Web Development course, which lasts 3 weeks. This course is designed for beginners who want to learn fundamental web programming skills.",
@@ -42,10 +39,30 @@ export const coursesList = [
       href: 'https://www.shecodes.io/',
       imgSrc: '/assets/images/sheCodes.png',
       title: 'SheCodes Basic',
-      repoLink: "",
-      notes:"",
+      repoLink: 'https://github.com/catiabarroco/travelingPage',
       certificate:"https://www.shecodes.io/certificates/d48c85f69f27a2dee064496c00f5e104",
       description:
         "Take the first step on your programming journey with our 100% Online Web Development course, which lasts 3 weeks. This course is designed for beginners who want to learn fundamental web programming skills.",
+    },
+    {
+      href: 'https://www.cursoemvideo.cp,/',
+      imgSrc: '/assets/images/cursoVideo.png',
+      title: 'Python 3 (120h)',
+      description:
+        "Python 3",
+    },
+    {
+      href: 'https://www.cursoemvideo.cp,/',
+      imgSrc: '/assets/images/cursoVideo.png',
+      title: 'Git and GitHub (20h)',
+      description:
+        "Git and GitHub(20h)",
+    },
+    {
+      href: 'https://www.cursoemvideo.cp,/',
+      imgSrc: '/assets/images/cursoVideo.png',
+      title: 'Course HTML and CSS (120h)',
+      description:
+        "Course HTML and CSS , 120h",
     },
   ];

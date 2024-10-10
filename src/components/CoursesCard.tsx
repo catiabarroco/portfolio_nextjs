@@ -8,9 +8,9 @@ type CoursesCardProps = {
   course: {
     href:string;
     imgSrc:string;
-    repoLink: string;
+    repoLink?: string;
     title: string;
-    notes: string;
+    notes?: string;
     description: string;
     certificate?: string;
   };
@@ -24,15 +24,16 @@ export default function CoursesCard({
   return (
     <article className="rounded gap-5 p-5 items-center border dark:border-brand-secondary-700 shadow">
      <section className='flex gap-5'>
-     <section className="w-full basis-1/4 shrink-0 content-center">
+     <section className="w-full basis-1/4 content-center">
         <Image
           src={imgSrc}
           alt={title}
           width={900}
           height={900}
+          className='rounded-xl'
         />
       </section>
-      <section className="flex flex-col gap-4 h-full">
+      <section className="flex flex-col gap-4 h-full w-full">
         <NavLink
           href={href}
           newTab
@@ -63,25 +64,29 @@ export default function CoursesCard({
   
 
       <footer className="flex justify-end gap-5 mt-auto pr-5 pt-2  text-brand-primary ">
-          <NavLink
-            href={notes}
-            newTab
-          >
-            <SpriteIcon
-              category={SpritesCategories.COMMON}
-              name="notes"
-              size="xl"
-              title="notes"
-            />
-          </NavLink>
-          <NavLink href={repoLink} newTab>
-            <SpriteIcon
-              category={SpritesCategories.SOCIAL}
-              name="github"
-              title="github"
-              size="xl"
-            />
-          </NavLink>
+      {notes && 
+      <NavLink
+      href={notes}
+      newTab
+    >
+      <SpriteIcon
+        category={SpritesCategories.COMMON}
+        name="notes"
+        size="xl"
+        title="notes"
+      />
+    </NavLink> }
+      {repoLink && 
+       <NavLink href={repoLink} newTab>
+       <SpriteIcon
+         category={SpritesCategories.SOCIAL}
+         name="github"
+         title="github"
+         size="xl"
+       />
+     </NavLink> }
+      
+         
           {certificate &&  
            <NavLink href={certificate} newTab>
            <SpriteIcon

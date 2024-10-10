@@ -141,4 +141,21 @@ export const projectsList = [
     description:
       'Page with HTML, CSS, JavaScript',
   },
+  {
+    title: 'Curso em Video',
+    imgSrc: '/assets/images/cursoVideo.png',
+    linkOnline: 'https://catiabarroco.github.io/html-css/desafios/d010/',
+    repoLink: 'https://github.com/catiabarroco/html-css?tab=readme-ov-file',
+    stacks: [
+      Stacks.HTML,
+      Stacks.CSS,
+      Stacks.JAVASCRIPT,
+      Stacks.VSCODE,
+      Stacks.GIT_HUB,
+      Stacks.PYTHON
+
+    ],
+    description:
+      'Page with HTML, CSS, JavaScript. Git and gitHub and Python',
+  },
 ];

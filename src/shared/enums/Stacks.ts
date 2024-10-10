@@ -21,5 +21,6 @@ export enum Stacks {
   SEO='seo',
   HOSTING='hosting',
   RESPONSIVE="responsive",
-  API="api"
+  API="api",
+  PYTHON="python"
 }
