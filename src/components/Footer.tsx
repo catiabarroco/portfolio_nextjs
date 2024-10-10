@@ -6,7 +6,7 @@ import { MenuPages } from '@components/MenuPages';
 
 export function Footer() {
   return (
-    <footer className="mt-32 bg-white dark:bg-brand-secondary-800">
+    <footer className="pt-32 bg-white dark:bg-brand-secondary-800">
       <div className="container mx-auto px-5 md:px-32">
         <div className="border-t border-brand-secondary-200 pb-16 pt-10 dark:border-zinc-700/40">
           <div className="flex flex-col w-full items-center justify-between gap-4 md:gap-6">

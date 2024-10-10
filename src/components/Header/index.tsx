@@ -10,8 +10,8 @@ import { MenuPages } from '@components/MenuPages';
 
 export function Header() {
   return (
-    <header className="pt-10 pb-20">
-      <div className="container lg:items-center mx-auto px-5 md:px-32 dark:text-white flex justify-between">
+    <header className="pt-10 pb-12 bg-white dark:bg-brand-secondary-800 sticky top-0 shadow-sm shadow-zinc-100 dark:shadow-zinc-700">
+      <div className="container sticky top-0 lg:items-center mx-auto px-5 md:px-32 dark:text-white flex justify-between">
         <NavLink href={URLS.home()} className="hidden lg:flex">
           <Image
             src="/assets/images/perfilPicture.jpeg"

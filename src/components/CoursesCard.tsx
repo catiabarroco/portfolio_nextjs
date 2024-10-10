@@ -23,7 +23,7 @@ export default function CoursesCard({
 }: CoursesCardProps) {
   return (
     <article className="rounded gap-5 p-5 items-center border dark:border-brand-secondary-700 shadow">
-     <section className='md:flex gap-5'>
+     <section className='flex flex-col md:flex-row gap-5'>
      <section className="w-full basis-1/4 content-center">
         <Image
           src={imgSrc}

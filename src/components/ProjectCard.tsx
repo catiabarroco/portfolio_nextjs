@@ -23,7 +23,7 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <article className="rounded gap-5 p-5 items-center border dark:border-brand-secondary-700 shadow">
-     <section className='md:flex gap-2 md:gap-10'>
+     <section className='flex flex-col gap-4 md:flex-row md:gap-10'>
       <section className="w-full basis-1/4 rounded place-content-center">
           <Image
             src={imgSrc}
